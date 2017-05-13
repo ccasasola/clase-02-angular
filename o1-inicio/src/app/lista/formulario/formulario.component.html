@@ -1,0 +1,19 @@
+<form>
+  <!-- 1era forma
+    <input type="text" [(ngModel)]="ingredienteInput" name="ingr"><br> 1era forma
+    {{ingredienteInput}}<br> 1era forma
+  -->
+
+  <!-- 2da forma
+    <input type="text" name="ingr" #ingredienteInput ><br>
+    <button (click)="agregarIngrediente(ingredienteInput)">Agregar</button>
+  -->
+  <div class="form-group">
+      <input type="text" class="form-control" name="ingr" #ingredienteInput ><br>
+  </div>
+  
+  <div class="form-group">
+      <button class="btn btn-success btn-block" (click)="agregarIngrediente()">Agregar</button>
+  </div>
+  
+</form>

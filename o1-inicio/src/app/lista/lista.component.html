@@ -1,0 +1,19 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">Lista de ingredientes</div>
+    <div class="panel-body">
+        <app-formulario (onIngredienteAdd)="agregar($event)">
+        </app-formulario>
+
+        <div *ngFor="let item of lista">
+          <!-- <div>
+            {{item.ingrediente}}
+          </div>
+          -->
+          <app-item [ingrediente]="item">
+
+          </app-item>
+        </div>
+    </div>
+</div>
+
+
